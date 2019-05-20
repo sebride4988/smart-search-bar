@@ -1,0 +1,22 @@
+#KeywordWindow {
+  position: absolute;
+  display: block;
+  width: 173px;
+  background-color: white;
+
+  &.none {
+    display: none;
+  }
+
+  > p {
+    margin: 0;
+    padding: 20px 0px;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      background-color: darken(white, 10%);
+    }
+  }
+}

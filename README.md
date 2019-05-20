@@ -59,7 +59,11 @@ declare module '*.tiff';
       {
         "transform": "ts-optchain/transform"
       }
-    ],
+    ],,
+    "baseUrl": "./src/",
+    "paths": {
+      "*": ["*"]
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -201,4 +205,12 @@ $ yarn add stylelint stylelint-order stylelint-config-rational-order stylelint-c
     "plugin/rational-order": true
   }
 }
+```
+
+### 4. sass
+
+#### bash
+
+```bash
+$ yarn add node-sass -D
 ```
